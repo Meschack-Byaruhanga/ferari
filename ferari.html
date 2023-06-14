@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERRARI</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: oppins,sans-serif;
+        box-sizing:borer-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-image: url(farariback.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 10px 5%;
+            background-repeat: no-repeat;
+            transition:  background-image 0.3s;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav .logo{
+            width: 160px;
+            cursor: pointer;
+
+        }
+        nav .btn{
+            text-decoration: none;
+            color: #fff;
+            background: #333;
+            padding: 15px 10px;
+            border-radius: 30px
+
+        }
+        .content{
+            margin: 10%;
+
+        }
+        .content h2{
+            color: rgb(187, 7, 7);
+            font-size: 34px;
+        }
+        .content h1{
+            font-size: 100px;
+            color: rgb(184, 3, 3);
+            margin-top: 25px;
+        }
+        .content p{
+            max-width: 380px;
+            font-weight: 500;
+            font-size: 14px;
+            color: rgb(164, 3, 3);
+        }
+        .content h3{
+            margin-top: 30px;
+            font-weight: 600px;
+            font-size: 24px;
+            color: rgb(165, 3, 3);
+        }
+        .colour-select div{
+            background: #333;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 10px;
+            cursor: pointer;  
+        }
+        .colour-select{
+            display: flex;
+            margin-top: 30px;
+        }
+         .colour-select #red{
+            background: red;
+         }     
+        
+         .colour-select #yellow{
+            background: yellow;
+         }
+         
+         .colour-select #blue{
+            background: blue;
+         }          
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container" id="car">
+        <nav>
+            <img src="Ferrari-Logo-1929.png" class="logo">
+            <a href="#" class="btn">test drive</a>
+
+        </nav>
+        <div class="content">
+            <h2>FERRARI</h2>
+            <h1>G 310 R</h1>
+            <p><br>Ferrari S.p.A. is an Italian luxury sports car manufacturer based in Maranello, Italy.
+             Founded in 1939 by Enzo Ferrari, the company adopted its current name in 1945 and began producing
+             in 1960, and from 1969 to 2014 it was a subsidiary of Fiat S.p.A</br>.</p>
+             <h3>CHOOSE YOUR COLOR</h3>
+             <div class="colour-select">
+                <div id="red"></div>
+                <div id="yellow"></div>
+                <div id="blue"></div>
+
+             </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        let redbtn =document.getElementById("red");
+        let yellowbtn =document.getElementById("yellow");
+        let bluebtn =document.getElementById("blue");
+        let car =document.getElementById("car");
+
+         redbtn.onclick = function(){
+            car.style.backgroundImage = "url(farari6.jpg)";
+         }
+           yellowbtn.onclick = function(){
+            car.style.backgroundImage = "url(farari4.jpg)";
+         }
+           bluebtn.onclick = function(){
+            car.style.backgroundImage = "url(farari7.jpg)";
+         } 
+ 
+ 
+
+    </script>
+     
+
+     
+</body>
+</html>
